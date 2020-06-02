@@ -1,11 +1,11 @@
 # githubSlowAccess
 github访问慢问题解决
 
-
+打开终端，编辑hosts文件
 sudo vim /etc/hosts
 
 # Github
-
+添加以下内容
 151.101.185.194 github.global.ssl.fastly.net
 192.30.253.112 github.com 
 151.101.112.133 assets-cdn.github.com 
@@ -21,5 +21,5 @@ sudo vim /etc/hosts
 151.101.13.194 github.global.ssl.fastly.net 
 151.101.12.133 avatars0.githubusercontent.com 
 151.101.112.133 avatars1.githubusercontent.com
-
+刷新dns
 dscacheutil -flushcache
